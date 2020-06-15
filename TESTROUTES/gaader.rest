@@ -1,0 +1,28 @@
+GET http://localhost:5050/gaader
+
+###
+
+GET http://localhost:5050/gaader/
+###
+
+POST http://localhost:5050/gaader/admin
+Content-Type: application/json
+
+{
+    "gaade": "yehaw",
+    "svar": "hello"
+}
+
+###
+
+DELETE http://localhost:5050/gaader/admin/5ee201f90e44814790b0671e
+
+###
+
+PATCH http://localhost:5050/gaader/admin/5ee201f90e44814790b0671e
+Content-Type: application/json
+
+{
+    "gaade": "Hulk, Bruce Banner",
+    "svar": "Stan Lee"
+}

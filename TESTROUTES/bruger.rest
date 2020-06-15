@@ -1,0 +1,31 @@
+GET http://localhost:5050/admin/bruger
+
+###
+
+GET http://localhost:5050/admin/bruger/5ee33fdaa672503a8847493e
+
+###
+
+POST http://localhost:5050/admin/bruger
+Content-Type: application/json
+
+{
+    "brugernavn": "Alex",
+    "email": "Albon@redbull.at",
+    "password": "secret"
+}
+
+###
+
+DELETE http://localhost:5050/admin/bruger/5ee33bbbed29833bd0ef3110
+
+###
+
+PUT http://localhost:5050/admin/bruger/5ee33e91a672503a8847493b
+Content-Type: application/json
+
+{
+    "brugernavn": "Seb",
+    "email": "vettel@ferrari.it",
+    "password": "secret"
+}
